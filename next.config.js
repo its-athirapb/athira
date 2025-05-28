@@ -1,7 +1,14 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Image optimization
+  // GitHub Pages deployment configuration
+  output: 'export',
+  trailingSlash: true,
+  basePath: '/athira',
+  assetPrefix: '/athira/',
+  
+  // Image optimization (disabled for static export)
   images: {
+    unoptimized: true,
     domains: ['avatars.githubusercontent.com'],
     formats: ['image/webp', 'image/avif'],
     minimumCacheTTL: 3600, // 1 hour cache
