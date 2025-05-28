@@ -22,7 +22,7 @@ const SocialSection = () => {
       color: 'from-gray-600 to-gray-700',
       hoverColor: 'hover:from-gray-500 hover:to-gray-600',
       description: 'Check out my code repositories and contributions',
-      stats: `${currentGithubStats.repos} repositories`,
+      stats: `${currentGithubStats.totalRepos} repositories`,
     },
     {
       name: 'LinkedIn',
@@ -31,7 +31,7 @@ const SocialSection = () => {
       color: 'from-blue-600 to-blue-700',
       hoverColor: 'hover:from-blue-500 hover:to-blue-600',
       description: 'Connect with me professionally',
-      stats: `${currentGithubStats.followers} connections`,
+      stats: `${currentGithubStats.totalStars} stars`,
     },
     {
       name: 'X',
@@ -119,7 +119,7 @@ const SocialSection = () => {
                     animate={inView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0 }}
                     transition={{ delay: 0.5, type: 'spring' }}
                   >
-                    {currentGithubStats.repos}
+                    {currentGithubStats.totalRepos}
                   </motion.div>
                   <div className="text-gray-400 text-sm flex items-center justify-center mt-1">
                     <GitBranch size={14} className="mr-1" />
@@ -134,11 +134,11 @@ const SocialSection = () => {
                     animate={inView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0 }}
                     transition={{ delay: 0.7, type: 'spring' }}
                   >
-                    {currentGithubStats.followers}
+                    {currentGithubStats.totalCommits}
                   </motion.div>
                   <div className="text-gray-400 text-sm flex items-center justify-center mt-1">
                     <Users size={14} className="mr-1" />
-                    Followers
+                    Commits
                   </div>
                 </div>
                 
@@ -149,9 +149,9 @@ const SocialSection = () => {
                     animate={inView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0 }}
                     transition={{ delay: 0.9, type: 'spring' }}
                   >
-                    {currentGithubStats.following}
+                    {currentGithubStats.totalPRs}
                   </motion.div>
-                  <div className="text-gray-400 text-sm">Following</div>
+                  <div className="text-gray-400 text-sm">Pull Requests</div>
                 </div>
                 
                 <div className="text-center p-4 bg-gray-800/50 rounded-lg">
@@ -161,7 +161,7 @@ const SocialSection = () => {
                     animate={inView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0 }}
                     transition={{ delay: 1.1, type: 'spring' }}
                   >
-                    {currentGithubStats.stars}
+                    {currentGithubStats.totalStars}
                   </motion.div>
                   <div className="text-gray-400 text-sm flex items-center justify-center mt-1">
                     <Star size={14} className="mr-1" />

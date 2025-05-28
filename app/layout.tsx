@@ -7,13 +7,17 @@ export const metadata: Metadata = {
   description: 'Portfolio of Athira P B, an AI/ML Engineer specializing in machine learning, deep learning, and innovative AI solutions.',
   keywords: ['AI', 'ML', 'Machine Learning', 'Deep Learning', 'Portfolio', 'Engineer'],
   authors: [{ name: 'Athira P B' }],
-  viewport: 'width=device-width, initial-scale=1',
   robots: 'index, follow',
   openGraph: {
     title: 'Athira P B - AI/ML Engineer Portfolio',
     description: 'Portfolio of Athira P B, an AI/ML Engineer specializing in machine learning, deep learning, and innovative AI solutions.',
     type: 'website',
   },
+}
+
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
 }
 
 export default function RootLayout({
