@@ -1,0 +1,38 @@
+<svg width="400" height="400" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="avatarGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#7916ff;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#bf00ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00d4ff;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="faceGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fbbf24;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background Circle -->
+  <circle cx="200" cy="200" r="200" fill="url(#avatarGradient)"/>
+  
+  <!-- Face -->
+  <circle cx="200" cy="180" r="80" fill="url(#faceGradient)"/>
+  
+  <!-- Eyes -->
+  <circle cx="180" cy="160" r="8" fill="#1f2937"/>
+  <circle cx="220" cy="160" r="8" fill="#1f2937"/>
+  
+  <!-- Smile -->
+  <path d="M 170 190 Q 200 210 230 190" stroke="#1f2937" stroke-width="4" fill="none" stroke-linecap="round"/>
+  
+  <!-- Hair -->
+  <path d="M 130 140 Q 200 100 270 140 Q 260 120 200 110 Q 140 120 130 140" fill="#374151"/>
+  
+  <!-- Body/Shoulders -->
+  <ellipse cx="200" cy="320" rx="100" ry="80" fill="#6366f1"/>
+  
+  <!-- Decorative Elements -->
+  <circle cx="100" cy="100" r="4" fill="#ffffff" opacity="0.6"/>
+  <circle cx="320" cy="120" r="3" fill="#ffffff" opacity="0.4"/>
+  <circle cx="80" cy="300" r="5" fill="#ffffff" opacity="0.5"/>
+  <circle cx="340" cy="280" r="4" fill="#ffffff" opacity="0.3"/>
+</svg>

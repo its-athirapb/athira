@@ -1,0 +1,36 @@
+{
+  "name": "Athira P B - Future-Ready Engineer & Creative Technologist",
+  "short_name": "Athira P B Portfolio",
+  "description": "Computer Engineering student passionate about technology, innovation, and creative problem-solving.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0a0a",
+  "theme_color": "#7916ff",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "en",
+  "categories": ["portfolio", "technology", "engineering"],
+  "icons": [
+    {
+      "src": "/images/avatar.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/images/avatar.svg",
+      "sizes": "1280x720",
+      "type": "image/svg+xml",
+      "form_factor": "wide"
+    },
+    {
+      "src": "/images/avatar.svg",
+      "sizes": "750x1334",
+      "type": "image/svg+xml",
+      "form_factor": "narrow"
+    }
+  ],
+  "prefer_related_applications": false
+}
